@@ -38,7 +38,7 @@ const mobilecdn = proxy('/mobilecdn', {
 app.use('/kugou/*', kugou);
 app.use('/yy_kugou/*', yy_kugou);
 app.use('/mobilecdn/*', mobilecdn);
-const server = app.listen(3000, () => {
+const server = app.listen(3004, () => {
     const host = server.address().address;
     const port = server.address().port;
     console.log('Listening at http://%s:%s', host, port);
